@@ -1,0 +1,235 @@
+/* Estilos gerais do corpo da página */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e9f5ff;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Estilos da barra de navegação */
+.navbar {
+    background: #007BFF;
+    color: white;
+    padding: 15px 0;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    margin-bottom: 20px;
+}
+
+#menu-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em;
+    margin: 0;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#menu-title:hover {
+    transform: scale(1.1);
+    color: #0056b3;
+}
+
+/* Estilos do cabeçalho */
+header {
+    margin-bottom: 20px;
+}
+
+/* Estilos do título */
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilos do container de entrada */
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Estilos do campo de entrada */
+#taskInput {
+    padding: 10px;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    width: 300px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+#taskInput:focus {
+    border-color: #0056b3;
+}
+
+/* Estilos do botão */
+#addTaskButton {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#addTaskButton i {
+    font-size: 16px;
+}
+
+#addTaskButton:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Estilos da lista de tarefas */
+#taskList {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+/* Estilo das tarefas */
+li {
+    padding: 15px;
+    margin: 10px auto;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid #ddd;
+    max-width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+li:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Estilo das tarefas concluídas */
+.completed {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+/* Estilos dos botões de ação */
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.action-buttons i {
+    cursor: pointer;
+    color: #007BFF;
+    transition: color 0.3s ease;
+}
+
+.action-buttons i:hover {
+    color: #0056b3;
+}
+
+/* Estilos da troca de tema */
+.theme-switcher {
+    margin-bottom: 20px;
+}
+
+.theme-switcher input {
+    margin-left: 10px;
+}
+
+/* Estilos dos botões de filtro */
+.filter-container {
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    padding: 10px 15px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.filter-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para o modo escuro */
+body.dark-mode {
+    background-color: #333;
+    color: #e9f5ff;
+}
+
+body.dark-mode .navbar {
+    background: #222;
+}
+
+body.dark-mode #taskInput {
+    border-color: #666;
+}
+
+body.dark-mode #addTaskButton {
+    background-color: #444;
+}
+
+body.dark-mode #addTaskButton:hover {
+    background-color: #555;
+}
+
+body.dark-mode li {
+    background-color: #444;
+    border-color: #666;
+}
+
+body.dark-mode .filter-btn {
+    background-color: #444;
+}
+
+body.dark-mode .filter-btn:hover {
+    background-color: #555;
+}
+/* Estilos para o modo escuro */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode #project-title {
+    color: #e0e0e0;
+}
+
+body.dark-mode h2 {
+    color: #e0e0e0;
+}
+
+body.dark-mode #taskInput {
+    border: 2px solid #666;
+    background-color: #333;
+    color: #e0e0e0;
+}
+
+body.dark-mode #addTaskButton {
+    background-color: #444;
+    color: #e0e0e0;
+}
+
+body.dark-mode li {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+}
+
+body.dark-mode .action-buttons i {
+    color: #e0e0e0;
+}

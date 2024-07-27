@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitson Produtividade</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1 id="menu-title">Kitson Produtividade</h1>
+        </div>
+    </header>
+    <main>
+        <div class="theme-switcher">
+            <label for="theme-toggle">Modo Escuro</label>
+            <input type="checkbox" id="theme-toggle">
+        </div>
+        <h2>Minha Lista de Tarefas</h2>
+        <div class="input-container">
+            <input type="text" id="taskInput" placeholder="Adicionar nova tarefa">
+            <button id="addTaskButton"><i class="fas fa-plus"></i> Adicionar</button>
+        </div>
+        <div class="filter-container">
+            <button class="filter-btn" data-filter="all">Todas</button>
+            <button class="filter-btn" data-filter="pending">Pendentes</button>
+            <button class="filter-btn" data-filter="completed">Concluídas</button>
+        </div>
+        <ul id="taskList"></ul>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
